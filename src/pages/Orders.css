@@ -1,0 +1,75 @@
+/* src/components/Orders.css */
+
+.orders-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .orders-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orders-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .order-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .order-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .order-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .order-details {
+    padding: 15px;
+  }
+  
+  .order-item {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .order-date {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .order-status {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .order-status.delivered {
+    color: green;
+  }
+  
+  .order-status.shipped {
+    color: orange;
+  }
+  
+  .order-status.processing {
+    color: red;
+  }
+  
